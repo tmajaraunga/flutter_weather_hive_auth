@@ -1,0 +1,38 @@
+name: flutter_weather_hive_auth
+description: Prototype app for class project (split files, flutter_map)
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  http: ^1.6.0
+  provider: ^6.0.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+  path_provider: ^2.0.15
+  location: ^8.0.1
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.0
+  flutter_slidable: ^4.0.3
+  google_fonts: ^6.3.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.0
+  build_runner: ^2.4.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/sample.json
+    - assets/images/banner.png

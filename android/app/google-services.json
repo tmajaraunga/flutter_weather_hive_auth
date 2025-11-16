@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798575484912",
+    "project_id": "flutterprojecttaku",
+    "storage_bucket": "flutterprojecttaku.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798575484912:android:41982936c20fbe284a8735",
+        "android_client_info": {
+          "package_name": "flutter_weather_hive_auth.taku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7PX-szP3SvgAfI9AWfA2aq8sChm6dTYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
