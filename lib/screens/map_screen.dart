@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ItemListScreen extends StatelessWidget {
+class MapScreen extends StatelessWidget {
   // Add a const constructor
-  const ItemListScreen({super.key});
+  const MapScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Item List'),
+        title: const Text('Map'),
       ),
       body: const Center(
-        child: Text('Item List Screen'),
+        child: Text('Map Screen'),
       ),
     );
   }

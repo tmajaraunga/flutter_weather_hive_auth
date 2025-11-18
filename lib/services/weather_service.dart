@@ -5,7 +5,7 @@ import '../models/weather_model.dart';
 
 class WeatherService {
 // Replace with your OpenWeatherMap API key
-  static const String apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+  static const String apiKey = '88f5f90e914ce4a1bc0600cb6e95424f';
 
 
   Future<WeatherModel> fetchWeatherByCity(String city) async {

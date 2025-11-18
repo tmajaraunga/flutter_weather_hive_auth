@@ -4,8 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 
-import 'services/auth_service.dart';
-import 'services/weather_service.dart';
+import 'services/auth_services.dart';import 'services/weather_service.dart';
 import 'services/local_json_service.dart';
 import 'services/location_service.dart';
 
@@ -25,11 +24,14 @@ Future<void> main() async {
   await Firebase.initializeApp();
   await Hive.initFlutter();
   await Hive.openBox('savedBox');
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+
   @override
   Widget build(BuildContext context) {
     final ThemeData base = ThemeData.dark();
@@ -43,8 +45,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'ProtoWeatherHiveAuth',
         theme: base.copyWith(
-          scaffoldBackgroundColor: Color(0xFF0F1724),
-          textTheme: GoogleFonts.inter().textTheme(base.textTheme),
+          scaffoldBackgroundColor: const Color(0xFF0F1724),
+          textTheme: GoogleFonts.interTextTheme(base.textTheme),
           colorScheme: base.colorScheme.copyWith(
             primary: Colors.cyan,
             secondary: Colors.amber,
@@ -52,6 +54,7 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
+          // FIX: Removed 'const' because the screen widgets do not have const constructors.
           '/': (_) => EntryGate(),
           '/home': (_) => HomeScreen(),
           '/items': (_) => ItemListScreen(),
@@ -66,10 +69,15 @@ class MyApp extends StatelessWidget {
 
 
 class EntryGate extends StatelessWidget {
+  const EntryGate({super.key});
+
+
   @override
   Widget build(BuildContext context) {
     final auth = context.watch<AuthService>();
+    // FIX: Removed 'const' because LoginScreen and HomeScreen do not have const constructors.
     if (auth.user == null) return LoginScreen();
     return HomeScreen();
   }
 }
+
