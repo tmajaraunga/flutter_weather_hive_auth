@@ -1,21 +1,40 @@
 {
   "project_info": {
-    "project_number": "798575484912",
-    "project_id": "flutterprojecttaku",
-    "storage_bucket": "flutterprojecttaku.firebasestorage.app"
+    "project_number": "155566033673",
+    "project_id": "takumajahfirebaseproject",
+    "storage_bucket": "takumajahfirebaseproject.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:798575484912:android:41982936c20fbe284a8735",
+        "mobilesdk_app_id": "1:155566033673:android:9abc096724b357ac3121d8",
         "android_client_info": {
-          "package_name": "flutter_weather_hive_auth.taku"
+          "package_name": "cis.css.flutter_firebase_test2"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB7PX-szP3SvgAfI9AWfA2aq8sChm6dTYI"
+          "current_key": "AIzaSyA2HMQLtvQ5aU5TR-kH1_e0FE9IESbMH2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155566033673:android:9723d97de1a4d9be3121d8",
+        "android_client_info": {
+          "package_name": "com.example.flutter_weather_hive_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2HMQLtvQ5aU5TR-kH1_e0FE9IESbMH2Q"
         }
       ],
       "services": {
